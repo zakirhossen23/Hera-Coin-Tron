@@ -97,7 +97,7 @@ export default function DonateNFTModal({
 
     //Calling smart contract method(functon) to store in to EVM
     const result = await contract.claimToken(
-        senderAddress,
+      window?.tronWeb?.defaultAddress?.base58,
         JSON.stringify(createdObject),
         EventID,
       )

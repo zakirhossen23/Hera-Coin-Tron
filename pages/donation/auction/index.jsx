@@ -421,7 +421,7 @@ window.location.reload()
           setDonateModalShow(false)
         }}
         contract={contract}
-        senderAddress={signerAddress}
+        senderAddress={window?.tronWeb?.defaultAddress?.base58}
         EventID={eventId}
         type={'NFT'}
         SelectedTitle={title}
