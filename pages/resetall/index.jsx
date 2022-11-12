@@ -39,7 +39,6 @@ export default function ResetAll() {
             <div className="row" style={{ "height": "100%" }}>
                 <div className='createevents col' >
                     <div style={{ background: "transparent", padding: "19px", borderRadius: "4px", height: "100%", border: "white solid" }}>
-
                         <ResetBTN />
                     </div>
                 </div>
