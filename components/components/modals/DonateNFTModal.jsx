@@ -91,10 +91,6 @@ export default function DonateNFTModal({
       bids: [],
     }
 
-
-    const web3 = new Web3(window.ethereum)
-    const account = await web3.eth.getAccounts();
-
     //Calling smart contract method(functon) to store in to EVM
     const result = await contract.claimToken(
       window?.tronWeb?.defaultAddress?.base58,
