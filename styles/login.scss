@@ -1,0 +1,95 @@
+.Login-Parent-Container {
+    height: 100%;
+    width: 100%;
+}
+
+.Login-container {
+    background: #ffffff;
+
+    @media only screen and (max-width: 650px) {
+        padding: 0.6rem 12px 0.8rem 12px;
+    }
+
+    padding: 2rem 30px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+// inside container
+
+
+.Login.col {
+    width: 32%;
+    height: 31%;
+    min-width: 27rem;
+    min-height: 15rem;
+    box-shadow: green 0px 0 12px 0;
+    @media (min-width: 320px ) {
+        zoom:0.6;
+      }
+      @media (min-width: 375px) {
+        zoom:0.7;
+      }
+      @media (min-width: 425px) {
+        zoom:0.8;
+      }
+      @media (min-width: 768px ) {
+        zoom:1;
+      }
+}
+
+.Login.eventManagerButton {
+    width: 50%;
+    font-size: 2rem;
+}
+
+.Login.userButton {
+    width: 50%;
+    font-size: 2rem;
+}
+
+
+
+.eventManagerButton {
+    background: #121f29;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    border-radius: calc(2vw /2);
+    color: white;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventManagerButton.active {
+    background: #ef7db0;
+}
+
+.userButton.active {
+    background: #1b242a;
+}
+
+.userButton {
+    background: #0a58ca;
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    color: black;
+    flex-wrap: nowrap;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: calc(2vw /2);
+}
