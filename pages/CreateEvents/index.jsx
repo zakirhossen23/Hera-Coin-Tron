@@ -146,7 +146,7 @@ export default function CreateEvents() {
   function CreateEventBTN() {
     if (
       window.localStorage.getItem('Type') != 'manager' &&
-      typeof window.ethereum !== 'undefined'
+      typeof window.tronWeb !== 'undefined'
     ) {
       return (
         <>

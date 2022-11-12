@@ -8,7 +8,7 @@ declare let window: any;
 export default function Welcome() {
 	const router = useRouter();
 	function donateCLICK() {
-		if (typeof window.ethereum === "undefined") {
+		if (typeof window.tronWeb === "undefined") {
 			window.open(
 			  "https://chrome.google.com/webstore/detail/tronlink/ibnejdfjmmkpcnlpebklmnkoeoihofec",
 			  "_blank"
@@ -21,7 +21,7 @@ export default function Welcome() {
 	}
 
 	function CreateEventsCLICK() {
-		if (typeof window.ethereum === 'undefined') {
+		if (typeof window.tronWeb === 'undefined') {
 			window.open("https://chrome.google.com/webstore/detail/tronlink/ibnejdfjmmkpcnlpebklmnkoeoihofec", "_blank");
 		} else {
 			router.push('/CreateEvents');
