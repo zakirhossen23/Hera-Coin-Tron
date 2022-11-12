@@ -10,14 +10,14 @@ export function Nav(): JSX.Element {
 
     const [isSigned, setSigned] = useState(false);
     async function fetchInfo() {
-        if (window.tronLink == null) {
+        if (window?.tronLink == null) {
             window.document.getElementById("withoutSign").style.display = "none";
             window.document.getElementById("withSign").style.display = "none";
             window.document.getElementById("installTronLink").style.display = "";
             return;
         }
-        if (window.tronWeb.defaultAddress.base58 != null && window.localStorage.getItem("TronLink") == "true") {
-            let Balance = await window.tronWeb.trx.getBalance(window.tronWeb.defaultAddress.base58);
+        if (window?.tronWeb?.defaultAddress?.base58 != null && window?.tronWeb?.defaultAddress?.base58 != undefined && window.localStorage.getItem("TronLink") == "true") {
+            let Balance = await window?.tronWeb?.trx?.getBalance(window?.tronWeb?.defaultAddress?.base58);
 
             let subbing = 10;
 
@@ -26,8 +26,8 @@ export function Nav(): JSX.Element {
 
             }
             
-            setAccFull(window.tronWeb.defaultAddress.base58);
-            setAcc(window.tronWeb.defaultAddress.base58.toString().substring(0, subbing) + "...");
+            setAccFull(window?.tronWeb?.defaultAddress?.base58);
+            setAcc(window?.tronWeb?.defaultAddress?.base58.toString().substring(0, subbing) + "...");
 
             setBalance(Balance / 1000000 + " TRX");
             setSigned(true);
