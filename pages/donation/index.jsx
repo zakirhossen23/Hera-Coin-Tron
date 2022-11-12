@@ -140,7 +140,7 @@ export default function Donation() {
           <a className="DonationBarLink">This Month</a>
         </NavLink>
       </div>
-      <div id="Loading" className="LoadingArea">
+      <div id="Loading" className="LoadingArea text-white">
         <h1>Loading...</h1>
       </div>
       <div style={{ height: '100%' }}>

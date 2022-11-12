@@ -268,7 +268,7 @@ window.location.reload()
           <SlideShow images={imageList} />
         </div>
         <header className="mb-2 p-campaign-header">
-          <h1 className="mb-0 a-campaign-title">{title}</h1>
+          <h1 className="mb-0 a-campaign-title text-white">{title}</h1>
           <a className="fs-6 a-campaign-title" href={`/user/` + EventWallet} >{EventWallet}</a>
         </header>
         <div className="p-campaign-sidebar">
@@ -317,7 +317,7 @@ window.location.reload()
           <div className="m-campaign-byline">
             <div className="m-campaign-byline-members">
               <ul className="list-unstyled hrt-avatar-stack m-campaign-byline-avatar-stack" />
-              <div className="o-campaign-description" >
+              <div className="o-campaign-description text-white" >
                 Description
               </div>
             </div>
@@ -325,7 +325,7 @@ window.location.reload()
           <div className="mb-0 mt-1 hrt-rule hrt-rule--horizontal" />
           <div
             className="o-campaign-description position-relative mt-3">
-            <div className="o-campaign-story mt3x">{EventDescription}</div>
+            <div className="o-campaign-story mt3x text-white">{EventDescription}</div>
           </div>
         </div>
       </div>
@@ -421,7 +421,7 @@ window.location.reload()
           setDonateModalShow(false)
         }}
         contract={contract}
-        senderAddress={window.tronWeb.defaultAddress.base58}
+        senderAddress={signerAddress}
         EventID={eventId}
         type={'NFT'}
         SelectedTitle={title}

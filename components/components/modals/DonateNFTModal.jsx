@@ -96,8 +96,8 @@ export default function DonateNFTModal({
     const account = await web3.eth.getAccounts();
 
     //Calling smart contract method(functon) to store in to EVM
-    const result = await contract
-      .claimToken(
+    const result = await contract.claimToken(
+        senderAddress,
         JSON.stringify(createdObject),
         EventID,
       )
