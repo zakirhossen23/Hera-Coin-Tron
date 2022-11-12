@@ -251,7 +251,7 @@ export default function Donation() {
           setModalShow(false)
         }}
         contract={contract}
-        senderAddress={window.tronWeb.defaultAddress.base58}
+        senderAddress={window?.tronWeb?.defaultAddress?.base58}
         EventID={selectid}
         type={selectedtype}
         SelectedTitle={SelectedTitle}
